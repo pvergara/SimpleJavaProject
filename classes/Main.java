@@ -2,15 +2,15 @@ package classes;
 
 public class Main {
     public static void main(String[] args) {
-        Triangle myFirstTriangle = new Triangle(10, 100, 10, 10);
 
-        myFirstTriangle.showPosition();
+        Person onePerson = new Person("Neal", "Stephenson", (byte) 60);
+        Person secondPerson = new Person("Neal", "Stephenson", (byte) 61);
 
-        Triangle mySecondTriangle = new Triangle(0, 0, 10, 10);
+        System.out.println(onePerson.toString());
+        System.out.println(onePerson.hashCode());
+        System.out.println(onePerson.equals(secondPerson));
 
-        System.out.printf("The triangle area is: %f%n", mySecondTriangle.getArea());
 
-        Circle aCircle = new Circle(2);
-        System.out.printf("The circle area is: %f%n", aCircle.getArea());
     }
+
 }
