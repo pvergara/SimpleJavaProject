@@ -1,10 +1,25 @@
 package classes;
 
-public class Triangle {
-    private final int x;
-    private final int y;
-    private final int width;
-    private final int height;
+public class Triangle extends CoordinatesShape implements Shape {
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    private int width;
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    private  int height;
 
     public Triangle(int x, int y, int width, int height) {
         this.x = x;
@@ -13,6 +28,7 @@ public class Triangle {
         this.height = height;
     }
 
+    @Override
     public float getArea(){
         return (float) (this.width * this.height) / 2;
     }
@@ -20,4 +36,5 @@ public class Triangle {
     public void showPosition(){
         System.out.printf("x: %d,y: %d%n",this.x,this.y);
     }
+
 }
