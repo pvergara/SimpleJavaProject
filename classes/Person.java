@@ -1,9 +1,10 @@
 package classes;
 
+@SuppressWarnings("unused")
 public class Person  {
-    private String name;
-    private String lastname;
-    private byte age;
+    private final String name;
+    private final String lastname;
+    private final byte age;
 
     private static String className = "PERSON";
 
