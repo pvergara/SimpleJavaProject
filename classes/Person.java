@@ -38,8 +38,8 @@ public class Person  {
     public String toString() {
         return """
             Person{
-                name='%s', 
-                lastname='%s', 
+                name='%s',\s
+                lastname='%s',\s
                 age=%s
             }""".formatted(this.name,this.lastname,this.age);
     }
